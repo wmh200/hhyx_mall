@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>hust.wang.hhyx</groupId>
+    <artifactId>hhyx_parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>hhyx_parent</name>
+    <packaging>pom</packaging>
+    <description>父依赖</description>
+    <modules>
+        <module>hhyx_common</module>
+        <module>hhyx_product</module>
+        <module>hhyx_member</module>
+        <module>hhyx_shopkeeper</module>
+        <module>hhyx_order</module>
+        <module>hhyx_gateway</module>
+        <module>hhyx_cart</module>
+        <module>hhyx_third_service</module>
+        <module>hhyx_sso</module>
+        <module>hhyx_stock</module>
+        <module>hhyx_coupon</module>
+        <module>hhyx_seckill</module>
+        <module>hhyx_search</module>
+    </modules>
+    <!-- 集中定义依赖版本号 -->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <fastjson.version>1.2.66</fastjson.version>
+        <mybatisPlus.version>3.3.1</mybatisPlus.version>
+        <druid.version>1.1.10</druid.version>
+        <httpcore.version>4.4.12</httpcore.version>
+        <mysql.version>8.0.18</mysql.version>
+        <springboot.version>2.1.8.RELEASE</springboot.version>
+        <lombok.version>1.18.12</lombok.version>
+        <easyexcel.version>2.2.2</easyexcel.version>
+        <jackson.version>2.2.3</jackson.version>
+        <swagger2.version>2.6.1</swagger2.version>
+        <springcloud.version>Greenwich.SR3</springcloud.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>${springboot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+            <version>${springboot.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hhyx_shopkeeper" />
+        <module name="hhyx_order" />
+        <module name="hhyx_search" />
+        <module name="hhyx_third_service" />
+        <module name="hhyx_cart" />
+        <module name="hhyx_sso" />
+        <module name="hhyx_member" />
+        <module name="hhyx_gateway" />
+        <module name="hhyx_coupon" />
+        <module name="hhyx_stock" />
+        <module name="hhyx_product" />
+        <module name="hhyx_seckill" />
+        <module name="hhyx_common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="coupon" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="coupon" options="" />
+      <module name="hhyx_gateway" options="" />
+      <module name="hhyx_parent" options="-parameters" />
+      <module name="hhyx_third_service" options="" />
+    </option>
+  </component>
+</project>
